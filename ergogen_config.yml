@@ -56,7 +56,7 @@ points:
             top:
     thumb:
       key:
-        padding: cx + 3
+        padding: cx + 2
         rotate: -10
       anchor:
         ref: matrix_inner_bottom

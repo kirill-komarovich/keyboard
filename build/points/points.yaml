@@ -550,7 +550,7 @@ thumb_first_first:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
@@ -558,7 +558,7 @@ thumb_first_first:
         name: thumb_first_first
         zone: &ref_7
             key:
-                padding: cx + 3
+                padding: cx + 2
                 rotate: -10
             columns:
                 first: &ref_6
@@ -586,8 +586,8 @@ thumb_first_first:
             - 10
             - 0
 thumb_first_second:
-    x: 102.6955169
-    'y': -22.509780900000003
+    x: 102.00085849999999
+    'y': -21.790441100000002
     r: -146
     meta:
         stagger: 0
@@ -603,7 +603,7 @@ thumb_first_second:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
@@ -618,8 +618,8 @@ thumb_first_second:
             - 10
             - 0
 thumb_first_third:
-    x: 114.4385679
-    'y': -39.9195699
+    x: 113.18471659999999
+    'y': -38.3711926
     r: -156
     meta:
         stagger: 0
@@ -635,7 +635,7 @@ thumb_first_third:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
@@ -667,7 +667,7 @@ thumb_second_first:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
@@ -682,8 +682,8 @@ thumb_second_first:
             - 10
             - 10
 thumb_second_second:
-    x: 75.3472573
-    'y': -26.1253987
+    x: 74.6525989
+    'y': -25.4060589
     r: -146
     meta:
         stagger: -20
@@ -699,7 +699,7 @@ thumb_second_second:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
@@ -714,8 +714,8 @@ thumb_second_second:
             - 10
             - 10
 thumb_second_third:
-    x: 87.09030829999999
-    'y': -43.5351877
+    x: 85.836457
+    'y': -41.9868104
     r: -156
     meta:
         stagger: -20
@@ -731,7 +731,7 @@ thumb_second_third:
         rotate: -10
         width: 18
         height: 18
-        padding: 21
+        padding: 20
         autobind: 10
         skip: false
         asym: both
