@@ -10,6 +10,6 @@ $default_width: 18
 $default_padding: 19
 $default_autobind: 10
 vshift: 10
-hrshift: 22
-hshift: 20
-hp: 20
+hrshift: 19
+hshift: 19
+hp: 18

@@ -1,8 +1,8 @@
 units:
   vshift: 10
-  hrshift: cx + 4
-  hshift: cx + 2
-  hp: cx + 2
+  hrshift: cx + 1
+  hshift: cx + 1
+  hp: cx
 points:
   zones:
     matrix:
@@ -56,11 +56,11 @@ points:
             top:
     thumb:
       key:
-        rotate: -10
         padding: cx + 3
+        rotate: -10
       anchor:
         ref: matrix_inner_bottom
-        shift: [22, -15]
+        shift: [15, -22]
       columns:
         first:
           key:
@@ -71,7 +71,7 @@ points:
             third:
         second:
           key:
-            stagger: -15
+            stagger: -20
           rows:
             first:
             second:

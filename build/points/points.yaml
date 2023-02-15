@@ -16,7 +16,7 @@ matrix_pinky_bottom:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -86,7 +86,7 @@ matrix_pinky_bottom:
             - 0
 matrix_pinky_home:
     x: 0
-    'y': 30
+    'y': 28
     r: 0
     meta:
         stagger: 10
@@ -102,7 +102,7 @@ matrix_pinky_home:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -118,7 +118,7 @@ matrix_pinky_home:
             - 0
 matrix_pinky_top:
     x: 0
-    'y': 50
+    'y': 46
     r: 0
     meta:
         stagger: 10
@@ -149,12 +149,12 @@ matrix_pinky_top:
             - 10
             - 0
 matrix_ring_bottom:
-    x: 22
+    x: 19
     'y': 20
     r: -2
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -166,7 +166,7 @@ matrix_ring_bottom:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -181,12 +181,12 @@ matrix_ring_bottom:
             - 0
             - 10
 matrix_ring_home:
-    x: 22.6979899
-    'y': 39.9878165
+    x: 19.6281909
+    'y': 37.9890349
     r: -2
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -198,7 +198,7 @@ matrix_ring_home:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -213,12 +213,12 @@ matrix_ring_home:
             - 10
             - 10
 matrix_ring_top:
-    x: 23.3959798
-    'y': 59.975633
+    x: 20.2563818
+    'y': 55.9780698
     r: -2
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -245,12 +245,12 @@ matrix_ring_top:
             - 10
             - 0
 matrix_middle_bottom:
-    x: 44.335593200000005
-    'y': 29.2261193
+    x: 38.337420699999996
+    'y': 29.3308178
     r: -4
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -262,7 +262,7 @@ matrix_middle_bottom:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -277,12 +277,12 @@ matrix_middle_bottom:
             - 0
             - 10
 matrix_middle_home:
-    x: 45.73072270000001
-    'y': 49.1774003
+    x: 39.5930372
+    'y': 47.2869707
     r: -4
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -294,7 +294,7 @@ matrix_middle_home:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -309,12 +309,12 @@ matrix_middle_home:
             - 10
             - 10
 matrix_middle_top:
-    x: 47.12585220000001
-    'y': 69.12868130000001
+    x: 40.8486537
+    'y': 65.24312359999999
     r: -4
     meta:
         stagger: 10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -341,12 +341,12 @@ matrix_middle_top:
             - 10
             - 0
 matrix_index_bottom:
-    x: 65.5844375
-    'y': 17.7158364
+    x: 56.5935729
+    'y': 18.0298043
     r: -6
     meta:
         stagger: -10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -358,7 +358,7 @@ matrix_index_bottom:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -373,12 +373,12 @@ matrix_index_bottom:
             - 0
             - 0
 matrix_index_home:
-    x: 67.6750068
-    'y': 37.606274299999995
+    x: 58.475085199999995
+    'y': 35.9311984
     r: -6
     meta:
         stagger: -10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -390,7 +390,7 @@ matrix_index_home:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -405,12 +405,12 @@ matrix_index_home:
             - 10
             - 10
 matrix_index_top:
-    x: 69.7655761
-    'y': 57.49671219999999
+    x: 60.35659749999999
+    'y': 53.832592500000004
     r: -6
     meta:
         stagger: -10
-        spread: 22
+        spread: 19
         splay: -2
         origin:
             - 0
@@ -437,12 +437,12 @@ matrix_index_top:
             - 10
             - 10
 matrix_inner_bottom:
-    x: 85.4748754
-    'y': 15.6252671
+    x: 75.4894889
+    'y': 16.043763499999997
     r: -6
     meta:
         stagger: 0
-        spread: 20
+        spread: 19
         splay: 0
         origin:
             - 0
@@ -454,7 +454,7 @@ matrix_inner_bottom:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -469,12 +469,12 @@ matrix_inner_bottom:
             - 0
             - 0
 matrix_inner_home:
-    x: 87.5654447
-    'y': 35.515705
+    x: 77.3710012
+    'y': 33.9451576
     r: -6
     meta:
         stagger: 0
-        spread: 20
+        spread: 19
         splay: 0
         origin:
             - 0
@@ -486,7 +486,7 @@ matrix_inner_home:
         rotate: 0
         width: 18
         height: 18
-        padding: 20
+        padding: 18
         autobind: 10
         skip: false
         asym: both
@@ -501,12 +501,12 @@ matrix_inner_home:
             - 10
             - 10
 matrix_inner_top:
-    x: 89.656014
-    'y': 55.40614289999999
+    x: 79.25251349999999
+    'y': 51.846551700000006
     r: -6
     meta:
         stagger: 0
-        spread: 20
+        spread: 19
         splay: 0
         origin:
             - 0
@@ -533,8 +533,8 @@ matrix_inner_top:
             - 10
             - 10
 thumb_first_first:
-    x: 105.7864301
-    'y': -1.5921874999999996
+    x: 88.1076911
+    'y': -7.403645100000002
     r: -136
     meta:
         stagger: 0
@@ -558,8 +558,8 @@ thumb_first_first:
         name: thumb_first_first
         zone: &ref_7
             key:
-                rotate: -10
                 padding: cx + 3
+                rotate: -10
             columns:
                 first: &ref_6
                     key:
@@ -571,7 +571,7 @@ thumb_first_first:
                     name: first
                 second: &ref_8
                     key:
-                        stagger: -15
+                        stagger: -20
                     rows:
                         first: {}
                         second: {}
@@ -586,8 +586,8 @@ thumb_first_first:
             - 10
             - 0
 thumb_first_second:
-    x: 120.37425590000001
-    'y': -16.6983233
+    x: 102.6955169
+    'y': -22.509780900000003
     r: -146
     meta:
         stagger: 0
@@ -618,8 +618,8 @@ thumb_first_second:
             - 10
             - 0
 thumb_first_third:
-    x: 132.11730690000002
-    'y': -34.1081123
+    x: 114.4385679
+    'y': -39.9195699
     r: -156
     meta:
         stagger: 0
@@ -650,11 +650,11 @@ thumb_first_third:
             - 0
             - 0
 thumb_second_first:
-    x: 82.4832554
-    'y': -8.1467317
+    x: 60.7594315
+    'y': -11.019262900000001
     r: -136
     meta:
-        stagger: -15
+        stagger: -20
         spread: 19
         splay: 0
         origin:
@@ -682,11 +682,11 @@ thumb_second_first:
             - 10
             - 10
 thumb_second_second:
-    x: 97.07108120000001
-    'y': -23.2528675
+    x: 75.3472573
+    'y': -26.1253987
     r: -146
     meta:
-        stagger: -15
+        stagger: -20
         spread: 19
         splay: 0
         origin:
@@ -714,11 +714,11 @@ thumb_second_second:
             - 10
             - 10
 thumb_second_third:
-    x: 108.8141322
-    'y': -40.6626565
+    x: 87.09030829999999
+    'y': -43.5351877
     r: -156
     meta:
-        stagger: -15
+        stagger: -20
         spread: 19
         splay: 0
         origin:
