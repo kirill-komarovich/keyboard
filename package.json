@@ -1,0 +1,13 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "Keyboard generatated by ergogen",
+  "scripts": {
+    "gen": "rm -rf build && ergogen ergogen_config.yml -o build/"
+  },
+  "author": "Kirill Komarovich",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "ergogen": "^4.0.0"
+  }
+}

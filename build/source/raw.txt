@@ -1,0 +1,78 @@
+units:
+  vshift: 10
+  hrshift: cx + 4
+  hshift: cx + 2
+  hp: cx + 2
+points:
+  zones:
+    matrix:
+      rows:
+        bottom:
+          padding: hp
+        home:
+          padding: hp
+        top:
+      columns:
+        pinky:
+          key:
+            stagger: vshift
+          rows:
+            bottom:
+            home:
+            top:
+        ring:
+          key:
+            stagger: vshift
+            spread: hrshift
+            splay: -2
+          rows:
+            bottom:
+            home:
+            top:
+        middle:
+          key:
+            stagger: vshift
+            spread: hrshift
+            splay: -2
+          rows:
+            bottom:
+            home:
+            top:
+        index:
+          key:
+            stagger: -vshift
+            splay: -2
+            spread: hrshift
+          rows:
+            bottom:
+            home:
+            top:
+        inner:
+          key:
+            spread: hshift
+          rows:
+            bottom:
+            home:
+            top:
+    thumb:
+      key:
+        rotate: -10
+        padding: cx + 3
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [22, -15]
+      columns:
+        first:
+          key:
+            splay: -120
+          rows:
+            first:
+            second:
+            third:
+        second:
+          key:
+            stagger: -15
+          rows:
+            first:
+            second:
+            third:
