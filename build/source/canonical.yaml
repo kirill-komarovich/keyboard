@@ -191,7 +191,7 @@ cases:
             what: outline
             name: switch_plate
             extrude: 1
-psbs:
+pcbs:
     plate:
         outlines:
             main:
@@ -200,30 +200,22 @@ psbs:
                 outline: keycaps
                 layer: Eco1.User
         footprints:
-            keys:
-                type: choc
+            choc_hotswap:
+                what: choc
                 where: true
                 params:
-                    from: GND
-                    to: '=column_net'
+                    to: GND
+                    from: '=column_net'
                     keycaps: true
                     reverse: true
                     hotswap: true
             choc:
-                type: choc
-                anchor:
+                what: choc
+                where: true
+                adjust:
                     rotate: 180
-                nets:
-                    from: GND
-                    to: '=column_net'
                 params:
+                    to: GND
+                    from: '=column_net'
                     keycaps: true
                     reverse: true
-            promicro:
-                type: promicro_pretty
-                anchor:
-                    ref: home_pinky_bottom
-                    shift:
-                        - -17
-                        - -29.5
-                    rotate: 50
