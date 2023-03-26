@@ -1,0 +1,229 @@
+units:
+    vertical_shift: 7
+    horizontal_shift: cx + 0.5
+    vertical_padding: cy
+    home_col_rotation: -2
+    thumb_keys_rotation: -10
+    thumb_rotation: -120
+    plate_outline_horizontal_shift: cx/2 + 1
+    plate_outline_vertical_shift: cy/2 + 1
+points:
+    key:
+        padding: vertical_padding
+    zones:
+        home:
+            columns:
+                pinky:
+                    key:
+                        stagger: vertical_shift
+                        column_net: P4
+                    rows:
+                        bottom: null
+                        home: null
+                        top: null
+                ring:
+                    key:
+                        stagger: vertical_shift
+                        spread: horizontal_shift
+                        splay: home_col_rotation
+                        column_net: P5
+                    rows:
+                        bottom: null
+                        home: null
+                        top: null
+                middle:
+                    key:
+                        stagger: vertical_shift
+                        spread: horizontal_shift
+                        splay: home_col_rotation
+                        column_net: P6
+                    rows:
+                        bottom: null
+                        home: null
+                        top: null
+                index:
+                    key:
+                        stagger: '-vertical_shift'
+                        splay: home_col_rotation
+                        spread: horizontal_shift
+                        column_net: P7
+                    rows:
+                        bottom: null
+                        home: null
+                        top: null
+                inner:
+                    key:
+                        spread: horizontal_shift
+                        column_net: P8
+                    rows:
+                        bottom: null
+                        home: null
+                        top: null
+        thumb:
+            key:
+                rotate: thumb_keys_rotation
+                padding: cy + 1.5
+            anchor:
+                ref: home_inner_bottom
+            columns:
+                near:
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - -2
+                            - -13
+                        column_net: P9
+                    rows:
+                        first: null
+                        second: null
+                        third: null
+                home:
+                    key:
+                        stagger: '-cx-2'
+                        spread: 16
+                        column_net: P10
+                    rows:
+                        first: null
+                        second: null
+                        third: null
+outlines:
+    plate:
+        -
+            what: polygon
+            operation: stack
+            fillet: 3
+            points:
+                -
+                    ref: home_pinky_bottom
+                    shift:
+                        - '-plate_outline_horizontal_shift'
+                        - '-plate_outline_vertical_shift'
+                -
+                    ref: home_pinky_top
+                    shift:
+                        - '-plate_outline_horizontal_shift'
+                        - plate_outline_vertical_shift
+                -
+                    ref: home_middle_top
+                    shift:
+                        - '-plate_outline_horizontal_shift + 2'
+                        - plate_outline_vertical_shift
+                -
+                    ref: home_middle_top
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - plate_outline_vertical_shift
+                -
+                    ref: home_inner_top
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - plate_outline_vertical_shift
+                -
+                    ref: home_inner_bottom
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - '-plate_outline_vertical_shift + 1'
+                -
+                    ref: thumb_near_second
+                    shift:
+                        - '-plate_outline_horizontal_shift'
+                        - '-plate_outline_vertical_shift'
+                -
+                    ref: thumb_near_third
+                    shift:
+                        - '-plate_outline_horizontal_shift'
+                        - '-plate_outline_vertical_shift'
+                -
+                    ref: thumb_near_third
+                    shift:
+                        - '-plate_outline_horizontal_shift'
+                        - plate_outline_vertical_shift + 1
+                -
+                    ref: thumb_near_third
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - plate_outline_vertical_shift + 1
+                -
+                    ref: thumb_home_third
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - plate_outline_vertical_shift
+                -
+                    ref: thumb_home_second
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - plate_outline_vertical_shift
+                -
+                    ref: thumb_home_first
+                    shift:
+                        - plate_outline_horizontal_shift
+                        - '-plate_outline_vertical_shift'
+    switches:
+        -
+            what: rectangle
+            where: true
+            asym: source
+            size: 15
+            bound: false
+    keycaps:
+        -
+            what: rectangle
+            where: true
+            asym: source
+            size:
+                - cx - 0.5
+                - cy - 0.5
+            bound: false
+    switch_plate:
+        - plate
+        - '-switches'
+    keycaps_plate:
+        - plate
+        - '-keycaps'
+cases:
+    bottom:
+        -
+            what: outline
+            name: plate
+            extrude: 1
+    switchplate:
+        -
+            what: outline
+            name: switch_plate
+            extrude: 1
+psbs:
+    plate:
+        outlines:
+            main:
+                outline: plate
+            keycaps:
+                outline: keycaps
+                layer: Eco1.User
+        footprints:
+            keys:
+                type: choc
+                where: true
+                params:
+                    from: GND
+                    to: '=column_net'
+                    keycaps: true
+                    reverse: true
+                    hotswap: true
+            choc:
+                type: choc
+                anchor:
+                    rotate: 180
+                nets:
+                    from: GND
+                    to: '=column_net'
+                params:
+                    keycaps: true
+                    reverse: true
+            promicro:
+                type: promicro_pretty
+                anchor:
+                    ref: home_pinky_bottom
+                    shift:
+                        - -17
+                        - -29.5
+                    rotate: 50

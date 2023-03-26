@@ -1,0 +1,773 @@
+home_pinky_bottom:
+    x: 0
+    'y': 7
+    r: 0
+    meta:
+        stagger: 7
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_bottom
+        name: home_pinky_bottom
+        column_net: P4
+        zone: &ref_1
+            columns:
+                pinky: &ref_0
+                    key:
+                        stagger: vertical_shift
+                        column_net: P4
+                    rows:
+                        bottom: {}
+                        home: {}
+                        top: {}
+                    name: pinky
+                ring: &ref_2
+                    key:
+                        stagger: vertical_shift
+                        spread: horizontal_shift
+                        splay: home_col_rotation
+                        column_net: P5
+                    rows:
+                        bottom: {}
+                        home: {}
+                        top: {}
+                    name: ring
+                middle: &ref_3
+                    key:
+                        stagger: vertical_shift
+                        spread: horizontal_shift
+                        splay: home_col_rotation
+                        column_net: P6
+                    rows:
+                        bottom: {}
+                        home: {}
+                        top: {}
+                    name: middle
+                index: &ref_4
+                    key:
+                        stagger: '-vertical_shift'
+                        splay: home_col_rotation
+                        spread: horizontal_shift
+                        column_net: P7
+                    rows:
+                        bottom: {}
+                        home: {}
+                        top: {}
+                    name: index
+                inner: &ref_5
+                    key:
+                        spread: horizontal_shift
+                        column_net: P8
+                    rows:
+                        bottom: {}
+                        home: {}
+                        top: {}
+                    name: inner
+            name: home
+        col: *ref_0
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+home_pinky_home:
+    x: 0
+    'y': 24
+    r: 0
+    meta:
+        stagger: 7
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_home
+        name: home_pinky_home
+        column_net: P4
+        zone: *ref_1
+        col: *ref_0
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 0
+home_pinky_top:
+    x: 0
+    'y': 41
+    r: 0
+    meta:
+        stagger: 7
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: pinky_top
+        name: home_pinky_top
+        column_net: P4
+        zone: *ref_1
+        col: *ref_0
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+home_ring_bottom:
+    x: 18.5
+    'y': 14
+    r: -2
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_bottom
+        name: home_ring_bottom
+        column_net: P5
+        zone: *ref_1
+        col: *ref_2
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 10
+home_ring_home:
+    x: 19.0932914
+    'y': 30.9896441
+    r: -2
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_home
+        name: home_ring_home
+        column_net: P5
+        zone: *ref_1
+        col: *ref_2
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+home_ring_top:
+    x: 19.686582799999996
+    'y': 47.9792882
+    r: -2
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: ring_top
+        name: home_ring_top
+        column_net: P5
+        zone: *ref_1
+        col: *ref_2
+        row: top
+        bind:
+            - 0
+            - 10
+            - 10
+            - 0
+home_middle_bottom:
+    x: 37.233026800000005
+    'y': 20.3500951
+    r: -4
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_bottom
+        name: home_middle_bottom
+        column_net: P6
+        zone: *ref_1
+        col: *ref_3
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 10
+home_middle_home:
+    x: 38.418886900000004
+    'y': 37.308684
+    r: -4
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_home
+        name: home_middle_home
+        column_net: P6
+        zone: *ref_1
+        col: *ref_3
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+home_middle_top:
+    x: 39.604747
+    'y': 54.267272899999995
+    r: -4
+    meta:
+        stagger: 7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: middle_top
+        name: home_middle_top
+        column_net: P6
+        zone: *ref_1
+        col: *ref_3
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+home_index_bottom:
+    x: 55.199666400000005
+    'y': 12.076652000000001
+    r: -6
+    meta:
+        stagger: -7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_bottom
+        name: home_index_bottom
+        column_net: P7
+        zone: *ref_1
+        col: *ref_4
+        row: bottom
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+home_index_home:
+    x: 56.9766503
+    'y': 28.983524199999998
+    r: -6
+    meta:
+        stagger: -7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_home
+        name: home_index_home
+        column_net: P7
+        zone: *ref_1
+        col: *ref_4
+        row: home
+        bind:
+            - 10
+            - 10
+            - 10
+            - 10
+home_index_top:
+    x: 58.7536342
+    'y': 45.8903964
+    r: -6
+    meta:
+        stagger: -7
+        spread: 18.5
+        splay: -2
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: index_top
+        name: home_index_top
+        column_net: P7
+        zone: *ref_1
+        col: *ref_4
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+home_inner_bottom:
+    x: 73.5983214
+    'y': 10.142875400000001
+    r: -6
+    meta:
+        stagger: 0
+        spread: 18.5
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_bottom
+        name: home_inner_bottom
+        column_net: P8
+        zone: *ref_1
+        col: *ref_5
+        row: bottom
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
+home_inner_home:
+    x: 75.37530530000001
+    'y': 27.0497476
+    r: -6
+    meta:
+        stagger: 0
+        spread: 18.5
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_home
+        name: home_inner_home
+        column_net: P8
+        zone: *ref_1
+        col: *ref_5
+        row: home
+        bind:
+            - 10
+            - 0
+            - 10
+            - 10
+home_inner_top:
+    x: 77.15228920000001
+    'y': 43.9566198
+    r: -6
+    meta:
+        stagger: 0
+        spread: 18.5
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        width: 18
+        height: 18
+        padding: 17
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: inner_top
+        name: home_inner_top
+        column_net: P8
+        zone: *ref_1
+        col: *ref_5
+        row: top
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+thumb_near_first:
+    x: 79.59205800000001
+    'y': -11.8360946
+    r: -136
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -120
+        origin:
+            - -2
+            - -13
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: near_first
+        name: thumb_near_first
+        column_net: P9
+        zone: &ref_7
+            key:
+                rotate: thumb_keys_rotation
+                padding: cy + 1.5
+            columns:
+                near: &ref_6
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - -2
+                            - -13
+                        column_net: P9
+                    rows:
+                        first: {}
+                        second: {}
+                        third: {}
+                    name: near
+                home: &ref_8
+                    key:
+                        stagger: '-cx-2'
+                        spread: 16
+                        column_net: P10
+                    rows:
+                        first: {}
+                        second: {}
+                        third: {}
+                    name: home
+            name: thumb
+        col: *ref_6
+        row: first
+        bind:
+            - 0
+            - 0
+            - 10
+            - 0
+thumb_near_second:
+    x: 92.44323790000001
+    'y': -25.1438809
+    r: -146
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -120
+        origin:
+            - -2
+            - -13
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: near_second
+        name: thumb_near_second
+        column_net: P9
+        zone: *ref_7
+        col: *ref_6
+        row: second
+        bind:
+            - 10
+            - 10
+            - 10
+            - 0
+thumb_near_third:
+    x: 102.78830660000001
+    'y': -40.481076
+    r: -156
+    meta:
+        stagger: 0
+        spread: 19
+        splay: -120
+        origin:
+            - -2
+            - -13
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: near_third
+        name: thumb_near_third
+        column_net: P9
+        zone: *ref_7
+        col: *ref_6
+        row: third
+        bind:
+            - 10
+            - 10
+            - 0
+            - 0
+thumb_home_first:
+    x: 54.0071541
+    'y': -13.024661499999999
+    r: -136
+    meta:
+        stagger: -20
+        spread: 16
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: home_first
+        name: thumb_home_first
+        column_net: P10
+        zone: *ref_7
+        col: *ref_8
+        row: first
+        bind:
+            - 0
+            - 0
+            - 10
+            - 10
+thumb_home_second:
+    x: 66.858334
+    'y': -26.332447799999997
+    r: -146
+    meta:
+        stagger: -20
+        spread: 16
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: home_second
+        name: thumb_home_second
+        column_net: P10
+        zone: *ref_7
+        col: *ref_8
+        row: second
+        bind:
+            - 10
+            - 0
+            - 10
+            - 10
+thumb_home_third:
+    x: 77.2034027
+    'y': -41.6696429
+    r: -156
+    meta:
+        stagger: -20
+        spread: 16
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: -10
+        width: 18
+        height: 18
+        padding: 18.5
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: home_third
+        name: thumb_home_third
+        column_net: P10
+        zone: *ref_7
+        col: *ref_8
+        row: third
+        bind:
+            - 10
+            - 0
+            - 0
+            - 0
