@@ -1,78 +1,145 @@
 units:
-  vshift: 10
-  hrshift: cx + 1
-  hshift: cx + 1
-  hp: cx
+  vertical_shift: 7
+  horizontal_shift: cx + 0.5
+  vertical_padding: cy
+  home_col_rotation: -2
+  thumb_keys_rotation: -10
+  thumb_rotation: -120
+  plate_outline_horizontal_shift: cx/2 + 1
+  plate_outline_vertical_shift: cy/2 + 1
 points:
+  key:
+    padding: vertical_padding
+    footprints:
+      choc_hotswap:
+        type: choc
+        nets:
+          from: =column_net
+          to: GND
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
   zones:
-    matrix:
-      rows:
-        bottom:
-          padding: hp
-        home:
-          padding: hp
-        top:
+    home:
       columns:
         pinky:
           key:
-            stagger: vshift
+            stagger: vertical_shift
           rows:
             bottom:
             home:
             top:
         ring:
           key:
-            stagger: vshift
-            spread: hrshift
-            splay: -2
+            stagger: vertical_shift
+            spread: horizontal_shift
+            splay: home_col_rotation
           rows:
             bottom:
             home:
             top:
         middle:
           key:
-            stagger: vshift
-            spread: hrshift
-            splay: -2
+            stagger: vertical_shift
+            spread: horizontal_shift
+            splay: home_col_rotation
           rows:
             bottom:
             home:
             top:
         index:
           key:
-            stagger: -vshift
-            splay: -2
-            spread: hrshift
+            stagger: -vertical_shift
+            splay: home_col_rotation
+            spread: horizontal_shift
           rows:
             bottom:
             home:
             top:
         inner:
           key:
-            spread: hshift
+            spread: horizontal_shift
           rows:
             bottom:
             home:
             top:
     thumb:
       key:
-        padding: cx + 2
-        rotate: -10
+        rotate: thumb_keys_rotation
+        padding: cy + 1.5
       anchor:
-        ref: matrix_inner_bottom
-        shift: [15, -22]
+        ref: home_inner_bottom
       columns:
-        first:
+        near:
           key:
-            splay: -120
+            splay: thumb_rotation
+            origin: [-2, -13]
           rows:
             first:
             second:
             third:
-        second:
+        home:
           key:
-            stagger: -20
+            stagger: -cx-2
+            spread: 16
           rows:
             first:
             second:
             third:
+outlines:
+  plate:
+    - what: polygon
+      operation: stack
+      fillet: 3
+      points:
+        - ref: home_pinky_bottom
+          shift: [-plate_outline_horizontal_shift, -plate_outline_vertical_shift]
+        - ref: home_pinky_top
+          shift: [-plate_outline_horizontal_shift, plate_outline_vertical_shift]
+        - ref: home_middle_top
+          shift: [-plate_outline_horizontal_shift + 2, plate_outline_vertical_shift]
+        - ref: home_middle_top
+          shift: [plate_outline_horizontal_shift, plate_outline_vertical_shift]
+        - ref: home_inner_top
+          shift: [plate_outline_horizontal_shift, plate_outline_vertical_shift]
+        - ref: home_inner_bottom
+          shift: [plate_outline_horizontal_shift, -plate_outline_vertical_shift + 1]
+        - ref: thumb_near_second
+          shift: [-plate_outline_horizontal_shift, -plate_outline_vertical_shift]
+        - ref: thumb_near_third
+          shift: [-plate_outline_horizontal_shift, -plate_outline_vertical_shift]
+        - ref: thumb_near_third
+          shift: [-plate_outline_horizontal_shift, plate_outline_vertical_shift + 1]
+        - ref: thumb_near_third
+          shift: [plate_outline_horizontal_shift, plate_outline_vertical_shift + 1]
+        - ref: thumb_home_third
+          shift: [plate_outline_horizontal_shift, plate_outline_vertical_shift]
+        - ref: thumb_home_second
+          shift: [plate_outline_horizontal_shift, plate_outline_vertical_shift]
+        - ref: thumb_home_first
+          shift: [plate_outline_horizontal_shift, -plate_outline_vertical_shift]
+  switches:
+    - what: rectangle
+      where: true
+      asym: source
+      size: 15
+      bound: false
+  keycaps:
+    - what: rectangle
+      where: true
+      asym: source
+      size: [cx - 0.5, cy - 0.5] # Choc keycaps are 17.5 x 16.5
+      bound: false
+  switch_plate:
+    [plate, -switches]
+  keycaps_plate:
+    [plate, -keycaps]
+psbs:
+  kk:
+    outlines:
+      board:
+        outline: plate
+      keycaps:
+        outline: switches
+        layer: Eco1.User
