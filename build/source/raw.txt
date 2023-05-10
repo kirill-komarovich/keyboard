@@ -153,11 +153,13 @@ pcbs:
           keycaps: true
           reverse: true
           hotswap: true
-      rgb:
-        what: rgb
+      choc:
+        what: choc
         where: true
         adjust:
-          shift: [0, -5]
+          rotate: 180
         params:
-          din: DIN
-          dout: DOUT
+          to: GND
+          from: =column_net
+          keycaps: true
+          reverse: true
