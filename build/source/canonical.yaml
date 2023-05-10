@@ -4,7 +4,7 @@ units:
     vertical_padding: cy
     home_col_rotation: -2
     thumb_keys_rotation: -10
-    thumb_rotation: -120
+    thumb_rotation: -105
     plate_outline_horizontal_shift: cx/2 + 1
     plate_outline_vertical_shift: cy/2 + 1
 points:
@@ -70,16 +70,16 @@ points:
                     key:
                         splay: thumb_rotation
                         origin:
-                            - -2
+                            - 3
                             - -13
                         column_net: P9
                     rows:
                         first: null
                         second: null
-                        third: null
                 home:
                     key:
-                        stagger: '-cx-2'
+                        rotate: -7
+                        stagger: '-cx - 7'
                         spread: 16
                         column_net: P10
                     rows:
@@ -116,38 +116,23 @@ outlines:
                 -
                     ref: home_inner_top
                     shift:
-                        - plate_outline_horizontal_shift
+                        - plate_outline_horizontal_shift + 23
                         - plate_outline_vertical_shift
                 -
-                    ref: home_inner_bottom
+                    ref: thumb_near_first
                     shift:
-                        - plate_outline_horizontal_shift
-                        - '-plate_outline_vertical_shift + 1'
+                        - '-plate_outline_horizontal_shift - 1'
+                        - plate_outline_vertical_shift + 4
                 -
                     ref: thumb_near_second
                     shift:
                         - '-plate_outline_horizontal_shift'
-                        - '-plate_outline_vertical_shift'
-                -
-                    ref: thumb_near_third
-                    shift:
-                        - '-plate_outline_horizontal_shift'
-                        - '-plate_outline_vertical_shift'
-                -
-                    ref: thumb_near_third
-                    shift:
-                        - '-plate_outline_horizontal_shift'
-                        - plate_outline_vertical_shift + 1
-                -
-                    ref: thumb_near_third
-                    shift:
-                        - plate_outline_horizontal_shift
-                        - plate_outline_vertical_shift + 1
+                        - plate_outline_vertical_shift + 0.5
                 -
                     ref: thumb_home_third
                     shift:
                         - plate_outline_horizontal_shift
-                        - plate_outline_vertical_shift
+                        - plate_outline_vertical_shift + 0.5
                 -
                     ref: thumb_home_second
                     shift:
@@ -209,13 +194,13 @@ pcbs:
                     keycaps: true
                     reverse: true
                     hotswap: true
-            choc:
-                what: choc
+            rgb:
+                what: rgb
                 where: true
                 adjust:
-                    rotate: 180
+                    shift:
+                        - 0
+                        - -5
                 params:
-                    to: GND
-                    from: '=column_net'
-                    keycaps: true
-                    reverse: true
+                    din: DIN
+                    dout: DOUT
