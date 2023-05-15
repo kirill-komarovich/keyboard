@@ -153,13 +153,11 @@ pcbs:
           keycaps: true
           reverse: true
           hotswap: true
-      choc:
-        what: choc
-        where: true
-        adjust:
-          rotate: 180
+      controller:
+        what: elite_c
+        where:
+          ref: home_inner_top
+          shift: [cx + 3, -8.65]
+          rotate: -96
         params:
-          to: GND
-          from: =column_net
-          keycaps: true
-          reverse: true
+          orientation: down

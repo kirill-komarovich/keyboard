@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Keyboard generatated by ergogen",
   "scripts": {
-    "gen": "ergogen ergogen_config.yml --debug --clean -o build/"
+    "gen": "ergogen config/ --debug --clean -o build/"
   },
   "author": "Kirill Komarovich",
   "license": "UNLICENCED",
