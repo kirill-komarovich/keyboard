@@ -8,6 +8,6 @@
   "author": "Kirill Komarovich",
   "license": "UNLICENCED",
   "dependencies": {
-    "ergogen": "^4.0.2"
+    "ergogen": "^4.1.0"
   }
 }
