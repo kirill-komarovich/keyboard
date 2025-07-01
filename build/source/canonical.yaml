@@ -1,70 +1,70 @@
+meta:
+    engine: 4.1.0
 units:
-    vertical_shift: 7
-    horizontal_shift: cx + 0.5
-    vertical_padding: cy
-    home_col_rotation: -2
+    $default_width: cx
+    $default_height: cy
+    kx: cx
+    ky: cy
+    px: kx + 2
+    py: ky + 2
+    home_stagger: 7
+    home_splay: -2
     thumb_keys_rotation: -10
     thumb_rotation: -105
-    plate_outline_horizontal_shift: cx/2 + 1
-    plate_outline_vertical_shift: cy/2 + 1
+    plate_outline_horizontal_shift: kx / 2 + 1
+    plate_outline_vertical_shift: ky / 2 + 1
+    controller_w: 18.5
+    controller_h: 33.5
+    below_controller_h: 17
+    case_border: 1.5
+    screw_thread_radius: 0.5
+    screw_pcb_radius: 4
 points:
-    key:
-        padding: vertical_padding
     zones:
         home:
+            anchor:
+                shift:
+                    - 100
+                    - -100
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: null
+                home: null
+                top: null
             columns:
                 pinky:
                     key:
-                        stagger: vertical_shift
                         column_net: P4
-                    rows:
-                        bottom: null
-                        home: null
-                        top: null
                 ring:
                     key:
-                        stagger: vertical_shift
-                        spread: horizontal_shift
-                        splay: home_col_rotation
+                        stagger: home_stagger
+                        splay: home_splay
                         column_net: P5
-                    rows:
-                        bottom: null
-                        home: null
-                        top: null
                 middle:
                     key:
-                        stagger: vertical_shift
-                        spread: horizontal_shift
-                        splay: home_col_rotation
+                        stagger: home_stagger
+                        splay: home_splay
                         column_net: P6
-                    rows:
-                        bottom: null
-                        home: null
-                        top: null
                 index:
                     key:
-                        stagger: '-vertical_shift'
-                        splay: home_col_rotation
-                        spread: horizontal_shift
+                        stagger: '-home_stagger'
+                        splay: home_splay
                         column_net: P7
-                    rows:
-                        bottom: null
-                        home: null
-                        top: null
                 inner:
                     key:
-                        spread: horizontal_shift
                         column_net: P8
-                    rows:
-                        bottom: null
-                        home: null
-                        top: null
         thumb:
             key:
                 rotate: thumb_keys_rotation
-                padding: cy + 1.5
+                padding: ky + 1.5
             anchor:
                 ref: home_inner_bottom
+            rows:
+                first: null
+                second: null
+                third: null
             columns:
                 near:
                     key:
@@ -74,18 +74,14 @@ points:
                             - -13
                         column_net: P9
                     rows:
-                        first: null
-                        second: null
+                        third:
+                            skip: true
                 home:
                     key:
                         rotate: -7
-                        stagger: '-cx - 7'
+                        stagger: '-kx - home_stagger'
                         spread: 16
                         column_net: P10
-                    rows:
-                        first: null
-                        second: null
-                        third: null
 outlines:
     plate:
         -
@@ -156,8 +152,8 @@ outlines:
             where: true
             asym: source
             size:
-                - cx - 0.5
-                - cy - 0.5
+                - kx - 0.5
+                - ky - 0.5
             bound: false
     switch_plate:
         - plate
@@ -178,6 +174,7 @@ cases:
             extrude: 1
 pcbs:
     plate:
+        template: kicad8
         outlines:
             main:
                 outline: plate
@@ -195,12 +192,13 @@ pcbs:
                     reverse: true
                     hotswap: true
             controller:
-                what: elite_c
+                what: mcu_nice_nano
                 where:
                     ref: home_inner_top
                     shift:
-                        - cx + 3
-                        - -8.65
-                    rotate: -96
+                        - kx + 3
+                        - -7.35
+                    rotate: -6.25
                 params:
-                    orientation: down
+                    reversible: true
+                    include_extra_pins: true

@@ -1,10 +1,10 @@
 home_pinky_bottom:
-    x: 0
-    'y': 7
+    x: 100
+    'y': -100
     r: 0
     meta:
-        stagger: 7
-        spread: 19
+        stagger: 0
+        spread: 18.5
         splay: 0
         origin:
             - 0
@@ -14,8 +14,9 @@ home_pinky_bottom:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -23,61 +24,52 @@ home_pinky_bottom:
         colrow: pinky_bottom
         name: home_pinky_bottom
         column_net: P4
-        zone: &ref_1
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
             columns:
-                pinky: &ref_0
+                pinky:
                     key:
-                        stagger: vertical_shift
                         column_net: P4
-                    rows:
-                        bottom: {}
-                        home: {}
-                        top: {}
+                    rows: {}
                     name: pinky
-                ring: &ref_2
+                ring:
                     key:
-                        stagger: vertical_shift
-                        spread: horizontal_shift
-                        splay: home_col_rotation
+                        stagger: home_stagger
+                        splay: home_splay
                         column_net: P5
-                    rows:
-                        bottom: {}
-                        home: {}
-                        top: {}
+                    rows: {}
                     name: ring
-                middle: &ref_3
+                middle:
                     key:
-                        stagger: vertical_shift
-                        spread: horizontal_shift
-                        splay: home_col_rotation
+                        stagger: home_stagger
+                        splay: home_splay
                         column_net: P6
-                    rows:
-                        bottom: {}
-                        home: {}
-                        top: {}
+                    rows: {}
                     name: middle
-                index: &ref_4
+                index:
                     key:
-                        stagger: '-vertical_shift'
-                        splay: home_col_rotation
-                        spread: horizontal_shift
+                        stagger: '-home_stagger'
+                        splay: home_splay
                         column_net: P7
-                    rows:
-                        bottom: {}
-                        home: {}
-                        top: {}
+                    rows: {}
                     name: index
-                inner: &ref_5
+                inner:
                     key:
-                        spread: horizontal_shift
                         column_net: P8
-                    rows:
-                        bottom: {}
-                        home: {}
-                        top: {}
+                    rows: {}
                     name: inner
             name: home
-        col: *ref_0
+        col:
+            key:
+                column_net: P4
+            rows: {}
+            name: pinky
         row: bottom
         bind:
             - 10
@@ -85,12 +77,12 @@ home_pinky_bottom:
             - 0
             - 0
 home_pinky_home:
-    x: 0
-    'y': 24
+    x: 100
+    'y': -83
     r: 0
     meta:
-        stagger: 7
-        spread: 19
+        stagger: 0
+        spread: 18.5
         splay: 0
         origin:
             - 0
@@ -100,8 +92,9 @@ home_pinky_home:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -109,8 +102,52 @@ home_pinky_home:
         colrow: pinky_home
         name: home_pinky_home
         column_net: P4
-        zone: *ref_1
-        col: *ref_0
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                column_net: P4
+            rows: {}
+            name: pinky
         row: home
         bind:
             - 10
@@ -118,12 +155,12 @@ home_pinky_home:
             - 10
             - 0
 home_pinky_top:
-    x: 0
-    'y': 41
+    x: 100
+    'y': -66
     r: 0
     meta:
-        stagger: 7
-        spread: 19
+        stagger: 0
+        spread: 18.5
         splay: 0
         origin:
             - 0
@@ -133,8 +170,9 @@ home_pinky_top:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -142,8 +180,52 @@ home_pinky_top:
         colrow: pinky_top
         name: home_pinky_top
         column_net: P4
-        zone: *ref_1
-        col: *ref_0
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                column_net: P4
+            rows: {}
+            name: pinky
         row: top
         bind:
             - 0
@@ -151,8 +233,8 @@ home_pinky_top:
             - 10
             - 0
 home_ring_bottom:
-    x: 18.5
-    'y': 14
+    x: 118.5
+    'y': -93
     r: -2
     meta:
         stagger: 7
@@ -166,8 +248,9 @@ home_ring_bottom:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -175,8 +258,54 @@ home_ring_bottom:
         colrow: ring_bottom
         name: home_ring_bottom
         column_net: P5
-        zone: *ref_1
-        col: *ref_2
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P5
+            rows: {}
+            name: ring
         row: bottom
         bind:
             - 10
@@ -184,8 +313,8 @@ home_ring_bottom:
             - 0
             - 10
 home_ring_home:
-    x: 19.0932914
-    'y': 30.9896441
+    x: 119.0932914
+    'y': -76.01035590000001
     r: -2
     meta:
         stagger: 7
@@ -199,8 +328,9 @@ home_ring_home:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -208,8 +338,54 @@ home_ring_home:
         colrow: ring_home
         name: home_ring_home
         column_net: P5
-        zone: *ref_1
-        col: *ref_2
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P5
+            rows: {}
+            name: ring
         row: home
         bind:
             - 10
@@ -217,8 +393,8 @@ home_ring_home:
             - 10
             - 10
 home_ring_top:
-    x: 19.686582799999996
-    'y': 47.9792882
+    x: 119.6865828
+    'y': -59.02071180000001
     r: -2
     meta:
         stagger: 7
@@ -232,8 +408,9 @@ home_ring_top:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -241,8 +418,54 @@ home_ring_top:
         colrow: ring_top
         name: home_ring_top
         column_net: P5
-        zone: *ref_1
-        col: *ref_2
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P5
+            rows: {}
+            name: ring
         row: top
         bind:
             - 0
@@ -250,8 +473,8 @@ home_ring_top:
             - 10
             - 0
 home_middle_bottom:
-    x: 37.233026800000005
-    'y': 20.3500951
+    x: 137.2330268
+    'y': -86.6499049
     r: -4
     meta:
         stagger: 7
@@ -265,8 +488,9 @@ home_middle_bottom:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -274,8 +498,54 @@ home_middle_bottom:
         colrow: middle_bottom
         name: home_middle_bottom
         column_net: P6
-        zone: *ref_1
-        col: *ref_3
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P6
+            rows: {}
+            name: middle
         row: bottom
         bind:
             - 10
@@ -283,8 +553,8 @@ home_middle_bottom:
             - 0
             - 10
 home_middle_home:
-    x: 38.418886900000004
-    'y': 37.308684
+    x: 138.41888690000002
+    'y': -69.691316
     r: -4
     meta:
         stagger: 7
@@ -298,8 +568,9 @@ home_middle_home:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -307,8 +578,54 @@ home_middle_home:
         colrow: middle_home
         name: home_middle_home
         column_net: P6
-        zone: *ref_1
-        col: *ref_3
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P6
+            rows: {}
+            name: middle
         row: home
         bind:
             - 10
@@ -316,8 +633,8 @@ home_middle_home:
             - 10
             - 10
 home_middle_top:
-    x: 39.604747
-    'y': 54.267272899999995
+    x: 139.60474700000003
+    'y': -52.732727100000005
     r: -4
     meta:
         stagger: 7
@@ -331,8 +648,9 @@ home_middle_top:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -340,8 +658,54 @@ home_middle_top:
         colrow: middle_top
         name: home_middle_top
         column_net: P6
-        zone: *ref_1
-        col: *ref_3
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: home_stagger
+                splay: home_splay
+                column_net: P6
+            rows: {}
+            name: middle
         row: top
         bind:
             - 0
@@ -349,8 +713,8 @@ home_middle_top:
             - 10
             - 0
 home_index_bottom:
-    x: 55.199666400000005
-    'y': 12.076652000000001
+    x: 155.1996664
+    'y': -94.92334799999999
     r: -6
     meta:
         stagger: -7
@@ -364,8 +728,9 @@ home_index_bottom:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -373,8 +738,54 @@ home_index_bottom:
         colrow: index_bottom
         name: home_index_bottom
         column_net: P7
-        zone: *ref_1
-        col: *ref_4
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: '-home_stagger'
+                splay: home_splay
+                column_net: P7
+            rows: {}
+            name: index
         row: bottom
         bind:
             - 10
@@ -382,8 +793,8 @@ home_index_bottom:
             - 0
             - 0
 home_index_home:
-    x: 56.9766503
-    'y': 28.983524199999998
+    x: 156.97665030000002
+    'y': -78.0164758
     r: -6
     meta:
         stagger: -7
@@ -397,8 +808,9 @@ home_index_home:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -406,8 +818,54 @@ home_index_home:
         colrow: index_home
         name: home_index_home
         column_net: P7
-        zone: *ref_1
-        col: *ref_4
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: '-home_stagger'
+                splay: home_splay
+                column_net: P7
+            rows: {}
+            name: index
         row: home
         bind:
             - 10
@@ -415,8 +873,8 @@ home_index_home:
             - 10
             - 10
 home_index_top:
-    x: 58.7536342
-    'y': 45.8903964
+    x: 158.75363420000002
+    'y': -61.1096036
     r: -6
     meta:
         stagger: -7
@@ -430,8 +888,9 @@ home_index_top:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -439,8 +898,54 @@ home_index_top:
         colrow: index_top
         name: home_index_top
         column_net: P7
-        zone: *ref_1
-        col: *ref_4
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                stagger: '-home_stagger'
+                splay: home_splay
+                column_net: P7
+            rows: {}
+            name: index
         row: top
         bind:
             - 0
@@ -448,8 +953,8 @@ home_index_top:
             - 10
             - 10
 home_inner_bottom:
-    x: 73.5983214
-    'y': 10.142875400000001
+    x: 173.5983214
+    'y': -96.85712459999999
     r: -6
     meta:
         stagger: 0
@@ -463,8 +968,9 @@ home_inner_bottom:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -472,8 +978,52 @@ home_inner_bottom:
         colrow: inner_bottom
         name: home_inner_bottom
         column_net: P8
-        zone: *ref_1
-        col: *ref_5
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                column_net: P8
+            rows: {}
+            name: inner
         row: bottom
         bind:
             - 10
@@ -481,8 +1031,8 @@ home_inner_bottom:
             - 0
             - 0
 home_inner_home:
-    x: 75.37530530000001
-    'y': 27.0497476
+    x: 175.3753053
+    'y': -79.9502524
     r: -6
     meta:
         stagger: 0
@@ -496,8 +1046,9 @@ home_inner_home:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -505,8 +1056,52 @@ home_inner_home:
         colrow: inner_home
         name: home_inner_home
         column_net: P8
-        zone: *ref_1
-        col: *ref_5
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                column_net: P8
+            rows: {}
+            name: inner
         row: home
         bind:
             - 10
@@ -514,8 +1109,8 @@ home_inner_home:
             - 10
             - 10
 home_inner_top:
-    x: 77.15228920000001
-    'y': 43.9566198
+    x: 177.1522892
+    'y': -63.0433802
     r: -6
     meta:
         stagger: 0
@@ -529,8 +1124,9 @@ home_inner_top:
             - 0
             - 0
         rotate: 0
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 17
         autobind: 10
         skip: false
@@ -538,8 +1134,52 @@ home_inner_top:
         colrow: inner_top
         name: home_inner_top
         column_net: P8
-        zone: *ref_1
-        col: *ref_5
+        zone:
+            key:
+                padding: ky
+                spread: kx + 0.5
+            rows:
+                bottom: {}
+                home: {}
+                top: {}
+            columns:
+                pinky:
+                    key:
+                        column_net: P4
+                    rows: {}
+                    name: pinky
+                ring:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P5
+                    rows: {}
+                    name: ring
+                middle:
+                    key:
+                        stagger: home_stagger
+                        splay: home_splay
+                        column_net: P6
+                    rows: {}
+                    name: middle
+                index:
+                    key:
+                        stagger: '-home_stagger'
+                        splay: home_splay
+                        column_net: P7
+                    rows: {}
+                    name: index
+                inner:
+                    key:
+                        column_net: P8
+                    rows: {}
+                    name: inner
+            name: home
+        col:
+            key:
+                column_net: P8
+            rows: {}
+            name: inner
         row: top
         bind:
             - 0
@@ -547,8 +1187,8 @@ home_inner_top:
             - 10
             - 10
 thumb_near_first:
-    x: 88.4346665
-    'y': -4.957536599999998
+    x: 188.4346665
+    'y': -111.95753659999998
     r: -121
     meta:
         stagger: 0
@@ -562,8 +1202,9 @@ thumb_near_first:
             - 0
             - 0
         rotate: -10
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 18.5
         autobind: 10
         skip: false
@@ -571,12 +1212,16 @@ thumb_near_first:
         colrow: near_first
         name: thumb_near_first
         column_net: P9
-        zone: &ref_7
+        zone:
             key:
                 rotate: thumb_keys_rotation
-                padding: cy + 1.5
+                padding: ky + 1.5
+            rows:
+                first: {}
+                second: {}
+                third: {}
             columns:
-                near: &ref_6
+                near:
                     key:
                         splay: thumb_rotation
                         origin:
@@ -584,22 +1229,29 @@ thumb_near_first:
                             - -13
                         column_net: P9
                     rows:
-                        first: {}
-                        second: {}
+                        third:
+                            skip: true
                     name: near
-                home: &ref_8
+                home:
                     key:
                         rotate: -7
-                        stagger: '-cx - 7'
+                        stagger: '-kx - home_stagger'
                         spread: 16
                         column_net: P10
-                    rows:
-                        first: {}
-                        second: {}
-                        third: {}
+                    rows: {}
                     name: home
             name: thumb
-        col: *ref_6
+        col:
+            key:
+                splay: thumb_rotation
+                origin:
+                    - 3
+                    - -13
+                column_net: P9
+            rows:
+                third:
+                    skip: true
+            name: near
         row: first
         bind:
             - 0
@@ -607,8 +1259,8 @@ thumb_near_first:
             - 10
             - 0
 thumb_near_second:
-    x: 104.2922616
-    'y': -14.485740999999997
+    x: 204.2922616
+    'y': -121.48574099999999
     r: -131
     meta:
         stagger: 0
@@ -622,8 +1274,9 @@ thumb_near_second:
             - 0
             - 0
         rotate: -10
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 18.5
         autobind: 10
         skip: false
@@ -631,8 +1284,46 @@ thumb_near_second:
         colrow: near_second
         name: thumb_near_second
         column_net: P9
-        zone: *ref_7
-        col: *ref_6
+        zone:
+            key:
+                rotate: thumb_keys_rotation
+                padding: ky + 1.5
+            rows:
+                first: {}
+                second: {}
+                third: {}
+            columns:
+                near:
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - 3
+                            - -13
+                        column_net: P9
+                    rows:
+                        third:
+                            skip: true
+                    name: near
+                home:
+                    key:
+                        rotate: -7
+                        stagger: '-kx - home_stagger'
+                        spread: 16
+                        column_net: P10
+                    rows: {}
+                    name: home
+            name: thumb
+        col:
+            key:
+                splay: thumb_rotation
+                origin:
+                    - 3
+                    - -13
+                column_net: P9
+            rows:
+                third:
+                    skip: true
+            name: near
         row: second
         bind:
             - 10
@@ -640,8 +1331,8 @@ thumb_near_second:
             - 0
             - 0
 thumb_home_first:
-    x: 59.36126860000001
-    'y': -10.935624699999998
+    x: 159.3612686
+    'y': -117.93562469999999
     r: -118
     meta:
         stagger: -25
@@ -655,8 +1346,9 @@ thumb_home_first:
             - 0
             - 0
         rotate: -7
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 18.5
         autobind: 10
         skip: false
@@ -664,8 +1356,43 @@ thumb_home_first:
         colrow: home_first
         name: thumb_home_first
         column_net: P10
-        zone: *ref_7
-        col: *ref_8
+        zone:
+            key:
+                rotate: thumb_keys_rotation
+                padding: ky + 1.5
+            rows:
+                first: {}
+                second: {}
+                third: {}
+            columns:
+                near:
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - 3
+                            - -13
+                        column_net: P9
+                    rows:
+                        third:
+                            skip: true
+                    name: near
+                home:
+                    key:
+                        rotate: -7
+                        stagger: '-kx - home_stagger'
+                        spread: 16
+                        column_net: P10
+                    rows: {}
+                    name: home
+            name: thumb
+        col:
+            key:
+                rotate: -7
+                stagger: '-kx - home_stagger'
+                spread: 16
+                column_net: P10
+            rows: {}
+            name: home
         row: first
         bind:
             - 0
@@ -673,8 +1400,8 @@ thumb_home_first:
             - 10
             - 10
 thumb_home_second:
-    x: 75.69579910000002
-    'y': -19.6208486
+    x: 175.6957991
+    'y': -126.62084859999999
     r: -125
     meta:
         stagger: -25
@@ -688,8 +1415,9 @@ thumb_home_second:
             - 0
             - 0
         rotate: -7
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 18.5
         autobind: 10
         skip: false
@@ -697,8 +1425,43 @@ thumb_home_second:
         colrow: home_second
         name: thumb_home_second
         column_net: P10
-        zone: *ref_7
-        col: *ref_8
+        zone:
+            key:
+                rotate: thumb_keys_rotation
+                padding: ky + 1.5
+            rows:
+                first: {}
+                second: {}
+                third: {}
+            columns:
+                near:
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - 3
+                            - -13
+                        column_net: P9
+                    rows:
+                        third:
+                            skip: true
+                    name: near
+                home:
+                    key:
+                        rotate: -7
+                        stagger: '-kx - home_stagger'
+                        spread: 16
+                        column_net: P10
+                    rows: {}
+                    name: home
+            name: thumb
+        col:
+            key:
+                rotate: -7
+                stagger: '-kx - home_stagger'
+                spread: 16
+                column_net: P10
+            rows: {}
+            name: home
         row: second
         bind:
             - 10
@@ -706,8 +1469,8 @@ thumb_home_second:
             - 10
             - 0
 thumb_home_third:
-    x: 90.85011190000002
-    'y': -30.2320127
+    x: 190.8501119
+    'y': -137.23201269999998
     r: -132
     meta:
         stagger: -25
@@ -721,8 +1484,9 @@ thumb_home_third:
             - 0
             - 0
         rotate: -7
+        adjust: {}
         width: 18
-        height: 18
+        height: 17
         padding: 18.5
         autobind: 10
         skip: false
@@ -730,8 +1494,43 @@ thumb_home_third:
         colrow: home_third
         name: thumb_home_third
         column_net: P10
-        zone: *ref_7
-        col: *ref_8
+        zone:
+            key:
+                rotate: thumb_keys_rotation
+                padding: ky + 1.5
+            rows:
+                first: {}
+                second: {}
+                third: {}
+            columns:
+                near:
+                    key:
+                        splay: thumb_rotation
+                        origin:
+                            - 3
+                            - -13
+                        column_net: P9
+                    rows:
+                        third:
+                            skip: true
+                    name: near
+                home:
+                    key:
+                        rotate: -7
+                        stagger: '-kx - home_stagger'
+                        spread: 16
+                        column_net: P10
+                    rows: {}
+                    name: home
+            name: thumb
+        col:
+            key:
+                rotate: -7
+                stagger: '-kx - home_stagger'
+                spread: 16
+                column_net: P10
+            rows: {}
+            name: home
         row: third
         bind:
             - 10
